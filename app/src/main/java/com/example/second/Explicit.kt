@@ -17,7 +17,7 @@ class Explicit : AppCompatActivity() {
         val intentbtn = findViewById<Button>(R.id.button)
 
         intentbtn.setOnClickListener(){
-            intent = Intent(applicationContext, View::class.java)
+            intent = Intent(this, View::class.java)
             startActivity(intent)
         }
     }
