@@ -13,22 +13,24 @@
         android:theme="@style/Theme.Second"
         tools:targetApi="31">
         <activity
-            android:name=".Orders"
-            android:exported="false" />
-        <activity
-            android:name=".MultiScreen"
+            android:name=".AlertBox"
             android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Orders"
+            android:exported="false" />
+        <activity
+            android:name=".MultiScreen"
+            android:exported="true"></activity>
         <activity
             android:name=".Implicit"
             android:exported="true">
-
         </activity>
         <activity
             android:name=".Explicit"

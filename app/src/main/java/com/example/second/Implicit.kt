@@ -26,9 +26,18 @@ class Implicit : AppCompatActivity() {
         }
 
         camerabutton.setOnClickListener(){
-            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            startActivity(intent)
+//            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+//            startActivity(intent)
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type = "text/plain"
+            intent.putExtra(Intent.EXTRA_TEXT, "Hello from my app!")
+
+            val chooser = Intent.createChooser(intent, "Choose an app to share with")
+            startActivity(chooser)
 
         }
-     }
+
+
+
+    }
 }
