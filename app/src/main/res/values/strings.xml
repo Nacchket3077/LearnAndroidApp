@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Second</string>
+    <string name="login">Login Screen</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="forget">Forget Password</string>
+    <string name="log_in">Login</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">hindi</string>
+    <string name="span" translatable="false">Spanish</string>
 </resources>
